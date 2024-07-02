@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #f3eaea;
+            color: black;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background: linear-gradient(to right, #441bd9 0%, #5800d4 100%);;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>NARUTO RESTURANT</h1>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/home/home.html">Home</a>
+        <a href="/tiffins/tiffins.html" >Tiffins</a>
+        <a href="/fast_food/fastfood.html">Fast Food</a>
+        <a href="/snacks/snacks.html">Snacks</a>
+        <a href="/social_handles/social.html" class="active">Social handles</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">+</i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div style="overflow-x: auto;">
+        <table width="100%" border="0">
+            <tr>
+                <td><img src="/social_handles/images/sai nithin.jpg" alt=""></td>
+                <td>
+                    <P><strong>Roll No.</strong> 227R1A66E3</P>
+                    <p><a href="https://instagram.com/_pranav_2527?igshid=YmMyMTA2M2Y=" target="_blank">_sai nithin_2527</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/social_handles/images/srinivas.jpg" alt=""></td>
+                <td>
+                    <P><strong>Roll No.</strong> 227R1A66G0</P>
+                    <p><a href="https://instagram.com/k.srinivas09_04?igshid=YmMyMTA2M2Y=" target="_blank">k.srinivas09_04</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/social_handles/images/surendra.jpg" alt=""></td>
+                <td>
+                    <P><strong>Roll No.</strong> 227R1A66H0</P>
+                    <p><a href="https://instagram.com/surendra.php?igshid=YmMyMTA2M2Y=" target="_blank">surendra.php</a></p>
+                </td>
+            </tr>
+            </table>
+    </div>
+</body>
+
+</html>
